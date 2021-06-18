@@ -1,0 +1,120 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.mainBox {
+    position: relative;
+    overflow: hidden;
+    .main {
+        background-color: #1ba1ad;
+        display: block;
+        height: 100vh;
+    }
+    .clip-top {
+        position: fixed;
+        right: 52%;
+        bottom: 52%;
+    }
+    .clip-bottom {
+        top: 62%;
+        left: 38%;
+        position: fixed;
+    }
+    .attribution {
+        left: 30%;
+        position: absolute;
+        bottom: 22px;
+    }
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    border-radius: 12px;
+    left: 50%;
+    height: 420px;
+    width: 370px;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 5px 5px #1ba1ad;
+    .cardpattern {
+        background: url(../images/bg-pattern-card.svg);
+        height: 35%;
+        width: inherit;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    .card_details {
+        background: white;
+        height: 65%;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        position: relative;
+        img {
+            border-radius: 50%;
+            position: relative;
+            top: -15%;
+            left: 35%;
+            border: 7px solid white;
+        }
+        .details {
+            .primary {
+                top: -30px;
+                text-align: center;
+                font-size: 18px;
+                position: relative;
+                .city {
+                    color: $Darkgray;
+                    font-size: 14px;
+                    margin-top: 8px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 100%;
+                        bottom: -25px;
+                        transform: translateX(-57%);
+                        background-color: rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+            .name {
+                display: flex;
+                justify-content: center;
+                p {
+                    font-weight: 700;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+                span {
+                    color: $Darkgray;
+                    padding: 0px .5em;
+                }
+            }
+            .secondary {
+                display: flex;
+                justify-content: space-around;
+                padding: 2em;
+                text-align: center;
+                div {
+                    margin-right: 1.2em;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: rgba(0, 0, 0, 0.7);
+                    p {
+                        font-weight: 400;
+                        font-size: 10px;
+                        color: $Darkgray;
+                        letter-spacing: 5px;
+                        padding: .5em 1em;
+                    }
+                }
+            }
+        }
+    }
+}

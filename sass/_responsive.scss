@@ -1,0 +1,49 @@
+                @include media-sm {
+                    .card {
+                        position: absolute;
+                        top: 50%;
+                        border-radius: 12px;
+                        left: 50%;
+                        height: 400px;
+                        width: 280px;
+                        transform: translate(-50%, -50%);
+                        box-shadow: 5px 5px 5px 5px #1ba1ad;
+                        .card_details {
+                            background: white;
+                            height: 65%;
+                            border-bottom-left-radius: 12px;
+                            border-bottom-right-radius: 12px;
+                            position: relative;
+                            img {
+                                border-radius: 50%;
+                                position: relative;
+                                top: -19%;
+                                -webkit-transform: scale(0.8);
+                                transform: scale(0.9);
+                                left: 30%;
+                                border: 7px solid white;
+                            }
+                            .details {
+                                .secondary {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    padding: 2em;
+                                    text-align: center;
+                                    div {
+                                        margin-right: 0.5em;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        color: rgba(0, 0, 0, 0.7);
+                                        p {
+                                            font-weight: 400;
+                                            font-size: 10px;
+                                            color: $Darkgray;
+                                            letter-spacing: 5px;
+                                            padding: .5em 1em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }

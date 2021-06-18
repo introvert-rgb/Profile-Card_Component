@@ -1,0 +1,198 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.mainBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.mainBox .main {
+  background-color: #1ba1ad;
+  display: block;
+  height: 100vh;
+}
+
+.mainBox .clip-top {
+  position: fixed;
+  right: 52%;
+  bottom: 52%;
+}
+
+.mainBox .clip-bottom {
+  top: 62%;
+  left: 38%;
+  position: fixed;
+}
+
+.mainBox .attribution {
+  left: 30%;
+  position: absolute;
+  bottom: 22px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  border-radius: 12px;
+  left: 50%;
+  height: 420px;
+  width: 370px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 5px 5px 5px 5px #1ba1ad;
+          box-shadow: 5px 5px 5px 5px #1ba1ad;
+}
+
+.card .cardpattern {
+  background: url(../images/bg-pattern-card.svg);
+  height: 35%;
+  width: inherit;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card .card_details {
+  background: white;
+  height: 65%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: relative;
+}
+
+.card .card_details img {
+  border-radius: 50%;
+  position: relative;
+  top: -15%;
+  left: 35%;
+  border: 7px solid white;
+}
+
+.card .card_details .details .primary {
+  top: -30px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+}
+
+.card .card_details .details .primary .city {
+  color: #969696;
+  font-size: 14px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.card .card_details .details .primary .city::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -25px;
+  -webkit-transform: translateX(-57%);
+          transform: translateX(-57%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card .card_details .details .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card_details .details .name p {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card .card_details .details .name span {
+  color: #969696;
+  padding: 0px .5em;
+}
+
+.card .card_details .details .secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2em;
+  text-align: center;
+}
+
+.card .card_details .details .secondary div {
+  margin-right: 1.2em;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card .card_details .details .secondary div p {
+  font-weight: 400;
+  font-size: 10px;
+  color: #969696;
+  letter-spacing: 5px;
+  padding: .5em 1em;
+}
+
+@media screen and (max-width: 648px) {
+  .card {
+    position: absolute;
+    top: 50%;
+    border-radius: 12px;
+    left: 50%;
+    height: 400px;
+    width: 280px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-box-shadow: 5px 5px 5px 5px #1ba1ad;
+            box-shadow: 5px 5px 5px 5px #1ba1ad;
+  }
+  .card .card_details {
+    background: white;
+    height: 65%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: relative;
+  }
+  .card .card_details img {
+    border-radius: 50%;
+    position: relative;
+    top: -19%;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.9);
+    left: 30%;
+    border: 7px solid white;
+  }
+  .card .card_details .details .secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2em;
+    text-align: center;
+  }
+  .card .card_details .details .secondary div {
+    margin-right: 0.5em;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .card .card_details .details .secondary div p {
+    font-weight: 400;
+    font-size: 10px;
+    color: #969696;
+    letter-spacing: 5px;
+    padding: .5em 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
