@@ -145,7 +145,7 @@ p {
 
 @media screen and (max-width: 648px) {
   .card {
-    position: absolute;
+    position: fixed;
     top: 50%;
     border-radius: 12px;
     left: 50%;
